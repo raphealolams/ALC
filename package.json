@@ -1,0 +1,22 @@
+{
+    "name": "alc",
+    "version": "1.0.0",
+    "description": "ALC 2.0  Test",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/raphealolams/ALC.git"
+    },
+    "dependencies": {
+
+    },
+    "author": "Ajilore Raphael Olamide",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/raphealolams/ALC/issues"
+    },
+    "homepage": "https://github.com/raphealolams/ALC#readme"
+}
