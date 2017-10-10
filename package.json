@@ -11,7 +11,9 @@
         "url": "git+https://github.com/raphealolams/ALC.git"
     },
     "dependencies": {
-
+        "express": "*",
+        "body-parser": "*",
+        "mongoose": "*"
     },
     "author": "Ajilore Raphael Olamide",
     "license": "ISC",
