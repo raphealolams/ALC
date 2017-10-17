@@ -1,0 +1,30 @@
+<a href="#/students">Go back</a>
+<div class="panel panel-default" ng-init="getStudent()">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">{{student.surName}} </h3>
+    </div>
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{student.imageUrl}}" alt="{{student.surName}}">
+            </div>
+
+            <div class="col-md-4">
+                <ul class="list-group">
+                    <li class="list-group-item">Surname: {{student.surName}} </li>
+                    <li class="list-group-item">Other Names: {{student.otherNames}} </li>
+                    <li class="list-group-item">Sex: {{student.sex}} </li>
+                    <li class="list-group-item">Age: {{student.age}} </li>
+                    <li class="list-group-item">Email: {{student.email}} </li>
+                    <li class="list-group-item">Phone Number: {{student.phoneNumber}} </li>
+                    <li class="list-group-item">Matric Number: {{student.matricNumber}} </li>
+                    <li class="list-group-item">Address: {{student.address}} </li>
+                    <li class="list-group-item">State of Origin: {{student.stateOfOrigin}} </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

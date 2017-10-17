@@ -1,9 +1,45 @@
-<html>
+<html ng-app="ALC">
 
 <head>
     <title>ALC 2.0</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/style.css " rel="stylesheet ">
+
 </head>
 
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top ">
+        <a class="navbar-brand " href="# ">ALC 2.0 Assessment</a>
+        <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarsExampleDefault " aria-controls="navbarsExampleDefault " aria-expanded="false " aria-label="Toggle navigation ">
+           <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarsExampleDefault ">
+            <ul class="navbar-nav mr-auto ">
+                <li class="nav-item active navbar-right ">
+                    <a class="nav-link " href="#/students/add ">Add Student <span class="sr-only "></span></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container ">
+        <div class="row ">
+            <div class="col-md-12 ">
+                <div ng-view>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="jquery.js "></script>
+        <script src="angular.js "></script>
+        <script src="angular-route.js "></script>
+        <script src="js/bootstrap.js "></script>
+        <script src="/app.js "></script>
+        <script src="/controllers/students.js "></script>
+</body>
 
 </html>

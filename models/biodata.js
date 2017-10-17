@@ -48,6 +48,13 @@ var bioDataSchema = mongoose.Schema({
         require: true
     },
 
+
+    imageUrl: {
+        type: String,
+        require: true
+    },
+
+
     create_date: {
         type: Date,
         default: Date.now
@@ -81,6 +88,7 @@ module.exports.updateStudent = function(id, student, options, callback) {
         matricNumber: student.matricNumber,
         address: student.address,
         stateOfOrigin: student.stateOfOrigin,
+        imageUrl: student.imageUrl,
     }
     bioData.findOneAndUpdate(query, update, options, callback);
 }
