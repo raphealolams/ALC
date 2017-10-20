@@ -20,17 +20,19 @@
                             {{student.sex}}
                         </p>
 
-                        <a href="#/students/details/{{student._id}}" class="btn btn-warning">View Details</a>
+                        <a ng-href="students/details/{{student._id}}" class="btn btn-warning">View Details</a>
+
                     </div>
 
                     <div class="col-md-6">
-                        <!-- <img class="thumbnail" src="{{student.imageUrl}}"> -->
+                        <img src="{{student.imageUrl}}" class="thumbnail" alt="{{student.surName}}">
+
                     </div>
 
                 </div>
 
-            </div>
-        </div>
 
+            </div>
+
+        </div>
     </div>
-</div>

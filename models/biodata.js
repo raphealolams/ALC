@@ -54,7 +54,6 @@ var bioDataSchema = mongoose.Schema({
         require: true
     },
 
-
     create_date: {
         type: Date,
         default: Date.now

@@ -5,6 +5,7 @@ var bodyPaser = require('body-parser');
 
 var mongoose = require('mongoose');
 
+
 Biodata = require('./models/biodata');
 
 //Connect to Mongo DB
@@ -18,12 +19,6 @@ app.use(express.static(__dirname + '/node_modules/angular'));
 app.use(express.static(__dirname + '/node_modules/angular-route'));
 app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 app.use(express.static(__dirname + '/node_modules/jquery/dist/'));
-
-// app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/')); // redirect bootstrap JS
-// app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
-// app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css')); // redirect CSS bootstrap
-// app.use('/css', express.static(__dirname + '/node_modules/angular-route')); // redirect CSS bootstrap
-// app.use('/css', express.static(__dirname + '/node_modules/angular')); // redirect CSS bootstrap
 
 
 

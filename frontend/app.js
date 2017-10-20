@@ -1,27 +1,32 @@
 var alc = angular.module('ALC', ['ngRoute']);
 
-alc.config(function($routeProvider) {
+alc.config(function($routeProvider, $locationProvider) {
     $routeProvider.when('/', {
-            controller: 'students',
+            controller: 'StudentsController',
             templateUrl: 'views/student.html'
         })
         .when('/students', {
-            controller: 'students',
+            controller: 'StudentsController',
             templateUrl: 'views/student.html'
         })
         .when('/students/details/:id', {
-            controller: 'students',
-            templateUrl: 'views/studentDetails.html'
+            controller: 'StudentsController',
+            templateUrl: 'studentDetails.html'
         })
         .when('/students/add', {
-            controller: 'students',
+            controller: 'StudentsController',
             templateUrl: 'views/addStudent.html'
         })
         .when('/students/edit/:id', {
-            controller: 'students',
+            controller: 'StudentsController',
             templateUrl: 'views/editStudent.html'
         })
         .otherwise({
             redirectTo: '/'
         })
+
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+    });
 })
