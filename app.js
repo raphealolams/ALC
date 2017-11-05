@@ -12,6 +12,12 @@ Biodata = require('./models/biodata');
 mongoose.connect('mongodb://localhost/ALC');
 var db = mongoose.connection;
 
+
+
+
+// var mongojs = require('mongojs');
+// var Biodata = mongojs('mongodb://raphealolams:ajilore1@ds235775.mlab.com:35775/students', ['bioDatas']);
+
 app.use(bodyPaser.json());
 
 app.use(express.static(__dirname + '/frontend'));
